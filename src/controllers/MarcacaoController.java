@@ -18,10 +18,26 @@ public class MarcacaoController {
 		return true;
 		
 	}
-		public static double calculo(Marcacao calculo) {
-			double horast = (calculo.getSaidaAlmoco() - calculo.getEntrada()) + (calculo.getSaida() - calculo.getVoltaAlmoco());
+		public static double calculo() {
 			
-			return horast;
+			double horast =0 ;
+			String data;
+			
+						
+			for ( Marcacao Calculo: marcacoes )
+				
+			{
+			double horas = (Calculo.getResultadoDia()); 				
+			
+	     
+			
+			horast = horast + horas;
+			//data = m.getDataMarcacao();
+			
+			System.out.print("Horas trabalhadas dias = "+ horast );
+			}
+			
+			return 0;
 		
 		}
 	

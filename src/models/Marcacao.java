@@ -5,55 +5,64 @@ import java.sql.Date;
 public class Marcacao {
 	
 	private Funcionario funcionarios;
-	private Double entrada;
-	private Double saidaAlmoco;
-	private Double voltaAlmoco;
-	private Double saida;
-	private String dataMarcacao;
-		
+	private String dataMarcacao;	
+	private String Entrada;
+	private String SaidaAlmoco;
+	private String VoltaAlmoco;
+	private String Saida;
+	private int resultadoDia;
 	
+	public int getResultadoDia() {
+		return resultadoDia;
+	}
+	public void setResultadoDia(int resultadoDia) {
+		this.resultadoDia = resultadoDia;
+	}
+	public Funcionario getFuncionarios() {
+		return funcionarios;
+	}
+	public void setFuncionarios(Funcionario funcionarios) {
+		this.funcionarios = funcionarios;
+	}
 	public String getDataMarcacao() {
 		return dataMarcacao;
 	}
 	public void setDataMarcacao(String dataMarcacao) {
 		this.dataMarcacao = dataMarcacao;
 	}
-	public Double getEntrada() {
-		return entrada;
+	public String getEntrada() {
+		return Entrada;
 	}
-	public void setEntrada(Double entrada) {
-		this.entrada = entrada;
+	public void setEntrada(String entrada) {
+		Entrada = entrada;
 	}
-	public Double getSaidaAlmoco() {
-		return saidaAlmoco;
+	public String getSaidaAlmoco() {
+		return SaidaAlmoco;
 	}
-	public void setSaidaAlmoco(Double saidaAlmoco) {
-		this.saidaAlmoco = saidaAlmoco;
+	public void setSaidaAlmoco(String saidaAlmoco) {
+		SaidaAlmoco = saidaAlmoco;
 	}
-	public Double getVoltaAlmoco() {
-		return voltaAlmoco;
+	public String getVoltaAlmoco() {
+		return VoltaAlmoco;
 	}
-	public void setVoltaAlmoco(Double voltaAlmoco) {
-		this.voltaAlmoco = voltaAlmoco;
+	public void setVoltaAlmoco(String voltaAlmoco) {
+		VoltaAlmoco = voltaAlmoco;
 	}
-	public Double getSaida() {
-		return saida;
+	public String getSaida() {
+		return Saida;
 	}
-	public void setSaida(Double saida) {
-		this.saida = saida;
-	}
-	public Funcionario getFuncionarios() {
-		return funcionarios;
-	}
-	public void setFuncionarios(Funcionario funcionario) {
-		this.funcionarios = funcionario;
+	public void setSaida(String saida) {
+		Saida = saida;
 	}
 	
-	@Override
-    public String toString() {
-        return "\n Marcação do dia "+ dataMarcacao+ "\n" + funcionarios+ "\nEntrada: " + entrada+ "\nSaida Para Almoço: "+ saidaAlmoco+
-        		"\nVolta do Almoco:  " + voltaAlmoco + "\nSaida: " + saida;
-    }
+	
+
+//	
+//	@Override
+//    public String toString() {
+//        return "\n Marcação do dia "+ dataMarcacao+ "\n" + funcionarios+ "\nEntrada: " + entrada+ "\nSaida Para Almoço: "+ saidaAlmoco+
+//        		"\nVolta do Almoco:  " + voltaAlmoco + "\nSaida: " + saida;
+//    }
 	 
 	
 	
